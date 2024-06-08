@@ -1,0 +1,5 @@
+More things to do:
+add a progress bar
+add news slide at any section
+add a custom mouse effect
+make it responsive **

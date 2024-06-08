@@ -1,0 +1,2077 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    /* overflow-x:hidden;  */
+    background-color: var(--primary-color);
+
+}
+
+:root {
+    --primary-color:#fff;
+    --secondary-color:#000;
+}
+
+.dark-mode {
+    --primary-color:#01161e;
+    --secondary-color:#fff;
+}
+
+.nav-logo {
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: var(--secondary-color);
+    /* padding: 100px; */
+    /* gap:54px; */
+    font-family: 'Clash Display', sans-serif;
+    /* font-size: 20px; */
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.news {
+    white-space: nowrap;
+    overflow: hidden;    
+    padding: 20px 0;
+    background: linear-gradient(90deg, rgba(255,85,80,1) 29%, rgba(255,211,98,1) 95%);
+    position: relative;
+    top: 470px;
+    
+    }
+    
+    .scroll {
+        /* height: 30px; */
+        /* width: 100%;
+        display: flex;
+        background-color: yellow;
+        
+        color: #000;
+        font-size: 4em;
+        background-color: #fff;
+        font-weight: 900;
+        text-transform: uppercase; */
+    display: inline-block;
+    animation: 50s slide infinite linear;
+}
+
+.new-content {
+    align-items: center;
+    font-size: 40px;
+    padding: 100px;
+    /* gap:54px; */
+    font-family: 'Clash Display', sans-serif;
+    /* font-size: 20px; */
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+ @keyframes slide {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+/*
+@keyframes animates {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+} */
+
+/* .scroll div {
+    color: #000;
+    font-size: 4em;
+    background-color: #fff;
+    white-space: nowrap;
+    font-weight: 900;
+    text-transform: uppercase;
+} */
+
+
+.navbar {
+    text-decoration: none;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    /* background-color: var(--secondary-color); */
+    /* height: 100px; */
+    /* position: fixed; */
+    /* z-index: 999; */
+
+
+}
+
+
+header.sticky {
+    padding: 10px 100px;
+    background: var(--primary-color);
+    width: 100%;
+    margin-top: 0;
+    top: 0;
+    
+}
+
+.dark-icon {
+    width: 30px;
+    cursor: pointer;
+    align-items: center;
+    /* display: flex; */
+    position: absolute;
+    top: 5%;
+    left: 54%;
+    position: relative;
+    display: flex;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 20px;
+    width: 84%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    transition: 0.6;
+    z-index: 999;
+    padding-left: 200px;
+    /* background:red; */
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    /* gap:54px; */
+    font-family: 'Clash Display', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color:var(--secondary-color);
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color:var(--secondary-color);
+
+}
+
+
+
+
+.navbar ul li a:hover {
+    color:red;
+}
+/* .navbar {
+    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 50px;
+
+} */
+
+/* .navdiv {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    align-items: center;
+} */
+
+/* .unactive {
+    list-style: none;
+    display:inline-flex;
+    font-size: 20px;
+    gap:54px;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
+    color:var(--secondary-color);
+}
+    */
+
+.active {
+    color:red;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+    list-style: none;
+    display:inline-flex;
+    font-size: 20px;
+    gap:54px;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+
+} 
+
+
+.navdiv ul {
+    display: flex;
+    gap: 24px;
+} */
+
+.logo {
+    padding-right:30px;
+}
+
+.download-button {
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+    width: 180px;
+    height: 60px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    cursor: pointer;
+    border: none;
+}
+
+.download-button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: var(--secondary-color) solid;
+}
+
+
+
+.heading-txt {
+    position: absolute;
+    width: 618px;
+    height: 128px;
+    top: 215px;
+    margin-left: 10%;
+    
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    /* or 100% */
+    text-transform: capitalize;
+    color: var(--secondary-color);
+}
+
+.home-img {
+    position: absolute;
+    left: 53.54%;
+    right: 29.15%;
+    top: 10.07%;
+    bottom: 88.37%;
+    width: 90px;
+}
+
+.back-img {
+    margin-left: 10%;
+}
+
+.floatation {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    50% {
+        transform: translateY(30px);
+    }
+}
+
+
+.desc {
+position: absolute;
+width: 638px;
+height: 56px;
+top: 367px;
+color: var(--secondary-color);
+margin-left: 10%;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+text-transform: capitalize;
+opacity: 0.5;
+}
+
+.clickables {
+    display: grid;
+    grid-template-columns: max-content;
+}
+
+ .start button {
+position: absolute;
+width: 134px;
+height: 28px;
+left: 10%;
+top: 463px;
+border: none;
+
+position: absolute;
+width: 180px;
+height: 60px;
+
+background: var(--secondary-color);
+border-radius: 4px;
+color:var(--primary-color);
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+text-transform: capitalize;
+
+color: var(--primary-color);
+cursor: pointer;
+
+}
+
+.start button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: var(--secondary-color) solid;
+}
+/*
+.start-txt {
+position: absolute;
+width: 102px;
+height: 28px;
+left: 40px;
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+text-transform: capitalize;
+color: var(--primary-color);
+} */
+
+
+/* get started */
+
+/* position: absolute;
+width: 102px;
+height: 28px;
+left: calc(50% - 102px/2 - 471px);
+top: calc(50% - 28px/2 - 2466.5px);
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+
+
+
+/* watch video */
+
+
+.watch button {
+
+position: inline-block;
+width: 134px;
+height: 28px;
+left: 20%;
+top: 463px;
+border: none;
+align-items: center;
+justify-content: center;
+
+position: absolute;
+width: 180px;
+height: 60px;
+
+background: transparent;
+border-radius: 4px;
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+cursor: pointer;
+
+}
+
+.watch button:hover {
+    border:var(--secondary-color) solid;
+    /* height: 50px; */
+}
+
+/* .play-btn img{
+    position: absolute;
+    left: 21%;
+    top: 480px;
+    cursor: pointer;
+    
+} */
+
+
+
+/* Group 35924 */
+.last-img {
+position: absolute;
+width: 569px;
+height: 357.74px;
+left: 5%;
+top: 570px;
+}
+
+.features {
+    position: relative;
+    display: flex;
+    top:500px;
+    justify-content: space-around;
+}
+
+.feature-img {
+    display: flex;
+    left:79.94px;
+    position: absolute;
+}
+
+/* features */
+.feature-txt {
+position: absolute;
+display: flex;
+margin-left: 100px;
+width: 116px;
+height: 28px;
+left: 730px;
+margin-top: 100px;
+/* top: 1000px; */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+letter-spacing: 0.16em;
+text-transform: uppercase;
+
+color: #FF5555;
+}
+
+
+/* uifry premium */
+.feature-head{
+position:absolute;
+width: 359px;
+height: 48px;
+left: 830px;
+margin-top: 130px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+/* identical to box height, or 100% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+}
+
+.f1-head {
+position: absolute;
+display: flex;
+width: 24px;
+height: 24px;
+left: 830px;
+top: 200px;
+}
+
+.f1-txt {
+    /* budgeting intervals */
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+width: 175px;
+height: 28px;
+left:40px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+
+}
+
+/* Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor. */
+.f1-content {
+position: absolute;
+width: 638px;
+height: 56px;
+left: 830px;
+top: 240px;
+z-index:99;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+opacity: 0.5;
+}
+
+.f1-img {
+    position: absolute;
+    left: 1200px;
+    margin-top: 30px;
+    
+}
+
+.featuretxt-container {
+    left:100px;
+    position: absolute;
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+
+.f2-head {
+    position: absolute;
+display: flex;
+width: 24px;
+height: 24px;
+left: 830px;
+top: 320px;
+}
+
+.f2-txt {
+    display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+width: 175px;
+height: 28px;
+left:40px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+}
+
+.f2-content {
+    position: absolute;
+width: 638px;
+height: 56px;
+left: 830px;
+top: 360px;
+z-index:99;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+opacity: 0.5;
+}
+
+
+.f3-head {
+    position: absolute;
+display: flex;
+width: 24px;
+height: 24px;
+left: 830px;
+top: 450px;
+}
+
+.f3-txt {
+    display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+width: 175px;
+height: 28px;
+left:40px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+}
+
+.f3-content {
+    position: absolute;
+width: 638px;
+height: 56px;
+left: 830px;
+top: 490px;
+z-index:99;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+opacity: 0.5;
+}
+
+.adv-txt {
+
+position: absolute;
+width: 154px;
+height: 28px;
+left: 175px;
+top: 1790px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+letter-spacing: 0.16em;
+text-transform: uppercase;
+color: #FF5555;
+}
+
+.adv-head {
+    /* why choose Uifry? */
+
+position: absolute;
+width: 470px;
+height: 48px;
+left: 175px;
+top: 1813px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+/* identical to box height, or 100% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+}
+
+.adv-subhead {
+    top:1890px;
+    position: absolute;
+    left: 175px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.adv-subhead-txt {
+    /* clever notifications */
+
+position: relative;
+width: 273px;
+height: 28px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 28px;
+/* identical to box height, or 100% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+}
+
+.adv-content {
+    /* Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam. */
+
+position: absolute;
+width: 635px;
+height: 140px;
+left: 175px;
+top:1970px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+opacity: 0.5;
+
+}
+
+.adv-img {
+    position: absolute;
+    top: 1660px;
+    left: 1100px;
+}
+
+.adv-subhead2 {
+    top:2221px;
+    position: absolute;
+    left: 175px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.adv-img2 {
+    /* Group 35937 */
+
+position: relative;
+right: 150px;
+top: 100.98px;
+
+
+}
+
+.adv-content2 {
+    /* Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam. */
+
+position: absolute;
+width: 630px;
+height: 140px;
+left: 935px;
+top: 2650px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+opacity: 0.5;
+
+}
+
+.first-head {
+    /* testimonial */
+
+position: absolute;
+width: 150px;
+height: 28px;
+left: 48%;
+top: 2982px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+text-align: center;
+letter-spacing: 0.16em;
+text-transform: uppercase;
+
+color: var(--secondary-color);
+
+
+}
+
+.main-head {
+    /* what our users say about us? */
+
+position: absolute;
+width: 455px;
+height: 96px;
+left: 40%;
+/* right:492px; */
+top: 3014px;
+text-align: center;
+display: flex;
+justify-content: center;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+/* or 100% */
+text-align: center;
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+
+}
+
+.test-img {
+    position: absolute;
+    top: 3090px;
+    left: 80px;
+}
+
+.content-head {
+    /* the best financial accounting app ever! */
+
+position: absolute;
+width: 442px;
+height: 56px;
+left: 1000px;
+top: 3235px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 28px;
+/* or 100% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+
+}
+
+.test-content-desc {
+/* “Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam.” */
+
+position: absolute;
+width: 500px;
+height: 196px;
+left: 1000px;
+top: 3315px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+opacity: 0.5;
+
+
+}
+
+.content-footer {
+    position: absolute;
+    bottom: 930px;
+    left: 180px;
+}
+
+.content-footer li {
+    display: inline;
+}
+
+.img-28 {
+    position: absolute;
+width: 40px;
+height: 40px;
+left: 823px;
+top: 3534.71px;
+}
+
+.img-27{
+position: absolute;
+width: 30px;
+height: 30px;
+left: 871px;
+top: 3539.71px;
+opacity: 0.5;
+
+}
+
+.img-29 {
+    /* Group 29 */
+
+position: absolute;
+width: 30px;
+height: 30px;
+left: 909px;
+top: 3539.71px;
+    opacity: 0.5;
+
+}
+
+.img-30 {
+    /* Group 30 */
+
+position: absolute;
+width: 30px;
+height: 30px;
+left: 947px;
+top: 3539.71px;
+    opacity: 0.5;
+
+
+
+}
+
+.img-31 {
+    /* Group 31 */
+
+position: absolute;
+width: 30px;
+height: 30px;
+left: 985px;
+top: 3539.71px;
+    opacity: 0.5;
+
+
+
+}
+
+.test-name {
+    /* nick jonas */
+
+position: absolute;
+width: 97px;
+height: 28px;
+left: 825px;
+top: 3599px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+
+}
+
+.faq-txt {
+    /* faq */
+
+position: absolute;
+width: 44px;
+height: 28px;
+left: 175px;
+top: 3871px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+letter-spacing: 0.16em;
+text-transform: uppercase;
+
+color: #FF5555;
+
+
+}
+
+.faq-main-head {
+    /* Frequently asked questions */
+
+position: absolute;
+width: 497px;
+height: 96px;
+left: 175px;
+top: 3903px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+/* or 100% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+
+}
+
+.faq-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: absolute;
+    top: 4050px;
+    column-gap: 200px;
+    row-gap: 30px;
+}
+
+.grid-item1 {
+    /* Group 1000002348 */
+
+
+/* Rectangle 14 */
+
+position: relative;
+width: 535px;
+height: 181px;
+left: 175px;
+top: 10px;
+/* text-align: center; */
+padding: 20px;
+
+background: #FF5555;
+border-radius: 8px;
+
+/* the best financial accounting app ever! */
+}
+.faq1-head{
+position: relative;
+width: 474px;
+height: 56px;
+/* left: 206px; */
+/* top: 4070px; */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 28px;
+/* or 100% */
+text-transform: capitalize;
+
+color: var(--primary-color);
+}
+
+.faq1-content {
+    /* “Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris. */
+
+position: relative;
+width: 466px;
+height: 56px;
+/* left: 206px; */
+/* top: 4134px; */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+text-align: justify;
+text-transform: capitalize;
+
+color: var(--primary-color);
+
+
+}
+
+.grid-item2 {
+    /* Rectangle 14 */
+
+    position: relative;
+    width: 535px;
+    height: 181px;
+    left: 175px;
+    top: 10px;
+    /* text-align: center; */
+    padding: 20px;
+    
+    background: var(--primary-color);
+    border-radius: 8px;
+
+}
+
+.faq2-head {
+    /* the best financial accounting app ever! */
+
+position: relative;
+width: 474px;
+height: 56px;
+/* left: 761px; */
+/* top: 4070px; */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 28px;
+/* or 100% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+
+}
+
+.faq2-content {
+    /* “Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris. */
+
+position: relative;
+width: 400px;
+height: 56px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+text-align: justify;
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+opacity: 0.5;
+
+}
+
+
+.grid-item3 {
+    /* Rectangle 14 */
+
+    position: relative;
+    width: 535px;
+    height: 181px;
+    left: 175px;
+    top: 10px;
+    /* text-align: center; */
+    padding: 20px;
+    
+    background: var(--primary-color);
+    border-radius: 8px;
+
+}
+
+.faq3-head {
+    /* the best financial accounting app ever! */
+
+position: relative;
+width: 474px;
+height: 56px;
+/* left: 761px; */
+/* top: 4070px; */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 28px;
+/* or 100% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+
+}
+
+.faq3-content {
+    /* “Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris. */
+
+position: relative;
+width: 400px;
+height: 56px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+text-align: justify;
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+opacity: 0.5;
+
+}
+
+.grid-item4 {
+    /* Rectangle 14 */
+
+    position: relative;
+    width: 535px;
+    height: 181px;
+    left: 175px;
+    top: 10px;
+    /* text-align: center; */
+    padding: 20px;
+    
+    background: #FF5555;
+    border-radius: 8px;
+
+}
+
+.faq4-head {
+    /* the best financial accounting app ever! */
+
+position: relative;
+width: 474px;
+height: 56px;
+/* left: 761px; */
+/* top: 4070px; */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 28px;
+/* or 100% */
+text-transform: capitalize;
+
+color: var(--primary-color);
+
+
+}
+
+.faq4-content {
+    /* “Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris. */
+
+position: relative;
+width: 400px;
+height: 56px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+text-align: justify;
+text-transform: capitalize;
+
+color: var(--primary-color);
+
+/* opacity: 0.5; */
+
+}
+
+.grid-item5 {
+    /* Rectangle 14 */
+
+    position: relative;
+    width: 535px;
+    height: 181px;
+    left: 175px;
+    top: 10px;
+    /* text-align: center; */
+    padding: 20px;
+    
+    background: #FF5555;
+    border-radius: 8px;
+
+}
+
+.faq5-head {
+    /* the best financial accounting app ever! */
+
+position: relative;
+width: 474px;
+height: 56px;
+/* left: 761px; */
+/* top: 4070px; */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 28px;
+/* or 100% */
+text-transform: capitalize;
+
+color: var(--primary-color);
+
+
+}
+
+.faq5-content {
+    /* “Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris. */
+
+position: relative;
+width: 400px;
+height: 56px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+text-align: justify;
+text-transform: capitalize;
+
+color: var(--primary-color);
+
+/* opacity: 0.5; */
+
+}
+
+.grid-item6 {
+    /* Rectangle 14 */
+
+    position: relative;
+    width: 535px;
+    height: 181px;
+    left: 175px;
+    top: 10px;
+    /* text-align: center; */
+    padding: 20px;
+    
+    background: var(--primary-color);
+    border-radius: 8px;
+
+}
+
+.faq6-head {
+    /* the best financial accounting app ever! */
+
+position: relative;
+width: 474px;
+height: 56px;
+/* left: 761px; */
+/* top: 4070px; */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 28px;
+/* or 100% */
+text-transform: capitalize;
+
+color: var(--secondary-color);
+
+
+}
+
+.faq6-content {
+    /* “Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris. */
+
+position: relative;
+width: 400px;
+height: 56px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+text-align: justify;
+text-transform: capitalize;
+color: var(--secondary-color);
+opacity: 0.5;
+}
+
+/* .black-box {
+    position: absolute;
+    width: 1090px;
+    height: 508px;
+    background-color: var(--secondary-color);
+    top: 4777px;
+    margin-left: 20%;
+    border-radius: 8px;
+} */
+
+.app-content {
+    position: absolute;
+    top: 4800px;
+    left: 355px;
+    cursor: pointer;
+}
+
+.click {
+    cursor: pointer;
+}
+
+/* .advantages {
+    top: 50px;
+    position: absolute;
+} */
+
+
+
+
+.app-txt-head {
+    /* ready to get started? */
+
+position: absolute;
+width: 547px;
+height: 48px;
+left: calc(50% - 547px/2 - 194.5px);
+top: 400px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+/* identical to box height, or 100% */
+text-transform: capitalize;
+
+color: #fff;
+
+
+}
+
+.app-txt-desc {
+    /* Risus habitant leo egestas mauris diam eget morbi tempus vulputate. */
+
+position: absolute;
+width: 536px;
+height: 56px;
+left: calc(50% - 536px/2 - 200px);
+top: 470px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+text-transform: capitalize;
+
+color: white;
+}
+
+.app-download {
+
+position: absolute;
+width: 228px;
+height: 60px;
+padding-right: 20px;
+
+left: calc(50% - 208px/2 - 364px);
+top: 292px;
+border: none;
+cursor: pointer;
+
+background: var(--primary-color);
+border-radius: 4px;
+/* Group 1 */
+/* download app */
+
+left: calc(50% - 536px/2 - 200px);
+
+top: 550px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+text-transform: capitalize;
+color: var(--secondary-color);
+}
+
+.apple-logo {
+    /* Vector */
+
+position: absolute;
+display: flex;
+width: 25.77px;
+height: 31.64px;
+left:80%;
+top: 12px;
+align-items: center;
+
+/* background: red; */
+
+}
+
+.back-grad {
+    
+    /* Group 1000002356 */
+
+position: absolute;
+width: 327px;
+height: 237.26px;
+left: 90px;
+top: 4600px;
+
+
+
+}
+
+.footer {
+    position: relative;
+    top: 4990px;
+    padding-right: 70px;
+    background-color: black;
+    height: 350px;
+    padding-top: 20px;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-txt {
+    font-family: 'Clash Display';
+    font-weight: 600;
+font-size: 35px;
+line-height: 26px;
+/* identical to box height, or 162% */
+text-transform: capitalize;
+bottom: 300px;
+left: 13%;
+position: absolute;
+
+color: white;
+}
+
+.email-img {
+    /* Frame */
+
+position: absolute;
+width: 24px;
+height: 24px;
+/* left: 175px; */
+top: 75px;
+
+}
+
+.email-text a {
+    /* help@frybix.com */
+
+position: relative;
+width: 140px;
+height: 26px;
+left: 35%;
+top: 15px;
+
+font-family: 'Clash Display';
+/* font-style: normal; */
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+text-transform: capitalize;
+
+color: white;
+text-decoration:double;
+
+
+}
+
+.phone-img {
+
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    /* left: 175px; */
+    top: 115px;   
+}
+
+.phone-txt {
+    /* +1 234 456 678 89 */
+
+position: relative;
+width: 141px;
+height: 26px;
+left:35%;
+top:30px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+text-transform: capitalize;
+
+color: white;
+
+
+}
+
+.link-head {
+    /* links */
+
+/* position: absolute; */
+width: 82px;
+height: 42px;
+/* left: 280px; */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 42px;
+/* identical to box height, or 131% */
+text-align: center;
+text-transform: capitalize;
+
+color: white;
+
+
+}
+
+.links a {
+    /* home */
+
+/* position: absolute; */
+width: 47px;
+height: 26px;
+/* left: calc(50% - 47px/2 - 280.5px); */
+/* top: calc(50% - 26px/2 + 2567.21px); */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 162% */
+text-transform: capitalize;
+text-decoration: none;
+
+color: white;
+
+
+}
+
+.legal-head {
+    /* links */
+
+/* position: absolute; */
+width: 82px;
+height: 42px;
+/* left: 280px; */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 42px;
+/* identical to box height, or 131% */
+text-align: center;
+text-transform: capitalize;
+
+color: white;
+
+
+}
+.product-head {
+    /* links */
+
+/* position: absolute; */
+width: 82px;
+height: 42px;
+/* left: 280px; */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 42px;
+/* identical to box height, or 131% */
+text-align: center;
+text-transform: capitalize;
+color: white;
+}
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: white;
+    transition: width .2s;
+  }
+  
+.hover-underline-animation:hover:after {
+    width: 100%;
+  }
+
+.newsletter-head {
+    /* links */
+
+/* position: absolute; */
+width: 82px;
+height: 42px;
+/* left: 280px; */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 42px;
+/* identical to box height, or 131% */
+text-align: center;
+text-transform: capitalize;
+
+color: white;
+
+
+}
+
+.legal a {
+    /* home */
+
+/* position: absolute; */
+width: 47px;
+height: 26px;
+/* left: calc(50% - 47px/2 - 280.5px); */
+/* top: calc(50% - 26px/2 + 2567.21px); */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 162% */
+text-transform: capitalize;
+text-decoration: none;
+
+color: white;
+
+
+}
+
+.product a {
+    /* home */
+
+/* position: absolute; */
+width: 47px;
+height: 26px;
+/* left: calc(50% - 47px/2 - 280.5px); */
+/* top: calc(50% - 26px/2 + 2567.21px); */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 162% */
+text-transform: capitalize;
+text-decoration: none;
+
+color: white;
+
+
+}
+
+.newsletter a {
+    /* home */
+
+/* position: absolute; */
+width: 47px;
+height: 26px;
+/* left: calc(50% - 47px/2 - 280.5px); */
+/* top: calc(50% - 26px/2 + 2567.21px); */
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 162% */
+text-transform: capitalize;
+text-decoration: none;
+color: white;
+}
+
+#newsletter-inp {
+    border: none;
+    margin-top: 20px;
+    font-family: 'Clash Display';
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+
+#newsletter-btn {
+    /* Rectangle */
+
+position: absolute;
+width: 160px;
+height: 61px;
+margin-left: 20px;
+/* left: calc(50% - 160px/2 + 456px); */
+/* top: calc(50% - 61px/2 + 2636.71px); */
+
+background: white;
+border-radius: 4px;
+color: white;
+font-family: 'clash display';
+text-transform: capitalize;
+/* Subscribe */
+
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+text-transform: capitalize;
+
+color: black;
+border: none;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+cursor: pointer;
+
+}
+
+#newsletter-btn:hover {
+    background-color: transparent;
+    border: white solid;
+    color: white;
+}
+
+.hr-line {
+    align-items: center;
+    position: absolute;
+    left: 20%;
+    top: 200px;
+}
+
+.copyright-txt {
+    /* Copyright 2022 uifry.com all rights reserved */
+padding-bottom: 100px;
+position: absolute;
+width: 356px;
+height: 26px;
+left: 43%;
+top: 250px;
+
+font-family: 'Clash Display';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+text-transform: capitalize;
+
+color: black;
+
+
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 1200px) {
+    .home-img {
+        top: 70%;
+        left: 20%;
+        position: absolute;
+        
+    }
+
+    .ft-img {
+        position: relative;
+        width: 540px;
+        left: 90px;
+        bottom: 100px;
+        
+    }
+
+    .first-grp {
+        width: 500px;
+    }
+
+    .last-img {
+        display: none;
+    }
+
+    .featuretxt-container {
+        position: absolute;
+        top: 470px;
+        /* right:500px; */
+        
+    }
+
+    .feature-img {
+        top: 1200px;
+    }
+
+    .advantages {
+        display: none;
+    }
+
+    .news {
+        position: relative;
+        top: 860px;
+    }
+
+    .home-center {
+        /* position: absolute; */
+        left: 15%;
+    }
+
+    .clickables button {
+        margin-left: 13vh;
+    }
+
+    /* .navbar ul {
+        position: absolute;
+        left: 0;
+        top: 2.5rem;
+        width: 100%;
+        background-color: red;
+        height: calc(100vh - 3.5rem);
+        overflow: auto;
+        pointer-events: none;
+        opacity: 0;
+        transition: top .4s, opacity .3s;
+    } */
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 120%;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        border-top: 1px solid #ddd;
+    }
+
+    .dark-icon {
+        position: relative;
+        left: 10%;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: relative;
+        left: 40%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .download-button {
+        display: none;
+    }
+
+    .feature-head, .f1-head, .f1-content, .f2-head, .f2-content, .f3-head, .f3-content {
+        left: 0px;
+        right:1000px;
+    }
+
+    .f1-blur {
+        position: absolute;
+        right: 300px;
+    }
+
+    .ft-txt {
+        position: absolute;
+        right:830px;
+    }
+
+    .watch {
+        left: 35%;
+        position: absolute;
+        bottom:100%;
+    }
+
+    .testimonial {
+        position: absolute;
+        bottom: 1100px;
+        left: 300px;
+    }
+
+    .test-img {
+        position: absolute;
+        left: 500px;
+        display: none;
+        width: 2000px;
+    }
+
+    .first-head {
+        position: absolute;
+        margin-left:30px;
+        /* display: none; */
+    }
+
+    .test-content {
+        position: absolute;
+        right: 1200px;
+    }
+
+
+  }
+
+  @media (max-width: 480px) {
+    .navbar-logo img {
+        width: 80px;
+        height: auto;
+    }
+
+    .nav-logo {
+        font-size: 1.2em;
+    }
+}
+  
